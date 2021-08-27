@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+*main - Print possible combinations
+*
+*Return: 0
+*/
+int main(void)
 {
 int num1, num2;
 for (num1 = 0; num <= 98; num1++)
