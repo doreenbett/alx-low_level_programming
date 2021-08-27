@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main - Prints positive or negative 
-*betty style doc for function main goes there 
-*Return: 0
+* main - Prints positive or negative results
+* Description: change to positive or negative
+* Return: 0
 */
 int main(void)
 {
