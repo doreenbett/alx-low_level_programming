@@ -1,4 +1,4 @@
-#include <holberton.c>
+#include <main.h>
 /**
 *main - Prints holberton
 *
