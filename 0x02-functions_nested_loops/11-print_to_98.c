@@ -1,10 +1,10 @@
-#include "main.h"
+#include "stdio.h"
 /**
-*print_to_98 - Prints all natural numbers
+*main - Prints all natural numbers
 *
 *Return: 0
 */
-int print_to_98(void)
+int main(void)
 {
 	int i, sum = 0;
 
@@ -13,6 +13,6 @@ int print_to_98(void)
 	if ((i % 3) == 0 || (i % 5) == 0)
 	sum += i;
 }
-	_putchar('\n');
+	printf("%d\n", sum);
 return (0);
 }
