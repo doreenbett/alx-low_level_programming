@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <time.h>
 #include <main.h>
@@ -21,3 +22,6 @@ else
 printf("%d is zero\n", n);
 return (0);
 }
+=======
+
+>>>>>>> c63094670c763cf6128e131e6e4fb4762a66afd1
