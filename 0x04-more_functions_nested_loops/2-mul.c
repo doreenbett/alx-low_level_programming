@@ -1,11 +1,11 @@
 #include "main.h"
 /**
 *mul - Writes a function that multiplies to integers
-*@a and @b: These are the two integers
+*@a: The first integer
+*@b: The second integer
 *Return: 0
 */
 int mul(int a, int b)
 {
-	printf("%d\n", mul(a, b))
-	return (0);
+	return (a * b);
 }
