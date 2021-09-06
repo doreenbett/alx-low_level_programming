@@ -2,14 +2,14 @@
 /**
 * _strlen - returns the length of a string
 * @s: is te ointer to the length of string
-* Return: strlen
+* Return: _strlen
 */
 int _strlen(char *s)
 {
 	int len;
 
 	*s = len;
-	_putchar(len);
-	_putchar('\n');
-	return (strlen);
+	putchar(len);
+	putchar('\n');
+	return (_strlen);
 }
