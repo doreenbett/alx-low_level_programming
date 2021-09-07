@@ -5,6 +5,6 @@
 */
 void _puts(char *str)
 {
-
+	str = "school!";
 	_puts(str);
 }
