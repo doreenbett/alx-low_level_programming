@@ -6,7 +6,5 @@
 */
 void print_rev(char *s)
 {
-	puts(s);
-
-	rev;
+	print_rev(s);
 }
