@@ -6,16 +6,12 @@
 */
 void print_rev(char *s)
 {
-	int l = 0;
+	int l >= 0
 
-	while ((s + l) != 0)
-	l++;
-
+	while (s + l)
 	{
-	while (l >= 0)
-	l--;
+	l--
 	}
 	putchar(s);
 	putchar('\n');
-
 }
