@@ -5,8 +5,6 @@
 */
 void _puts(char *str)
 {
-	char c
 
-	*str = c
 	_puts(*str);
 }
