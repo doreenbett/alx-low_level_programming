@@ -1,20 +1,20 @@
 #include "main.h"
 /**
 * *string_toupper - changes lowercase letter to upper
-* @a: pointer
+* @str: pointer
 *
-* Return: character
+* Return: pointer of a string
 */
-char *string_toupper(char *a);
+char *string_toupper(char *str);
 {
 	int i = 0;
 
-	while (a[i])
+	while (str[i])
 	{
-		if (a[i] >= 97 && (a[i] <= 122)
+		if (str[i] >= 97 && (str[i] <= 122)
+			str[i] -= 32;
 
-			a[i] -= 32;
 		i++;
 	}
-	return (a);
+	return (str);
 }
