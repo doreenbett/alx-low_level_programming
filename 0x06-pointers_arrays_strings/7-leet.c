@@ -14,7 +14,7 @@ char *leet(char *a)
 
 	while (a[i])
 	{
-		for (j = 0; i <= 7; i++)
+		for (j = 0; j <= 7; j++)
 		{
 			if (a[i] == leet[j] || a[i] - 32 == leet[j])
 				a[i] = j + '0';
