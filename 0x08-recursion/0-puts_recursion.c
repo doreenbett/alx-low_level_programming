@@ -11,8 +11,7 @@ void _puts_recursion(char *s)
 
 	if (i < n)
 	{
-		s++;
-		i++;
+		s[i]++;
 	}
 }
 
