@@ -11,7 +11,7 @@ void _puts_recursion(char *s)
 
 	if (i <= n)
 	{
-		_putchar(*s);
+		puts(s);
 	}
 }
 
