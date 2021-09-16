@@ -19,11 +19,11 @@ if (j >= size - i)
 {
 _putchar('#');
 }
-esle
+else
 {
 _putchar(' ');
 }
 }
-_putchar('\n')
+_putchar('\n');
 }
 }
