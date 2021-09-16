@@ -1,5 +1,3 @@
-
-
 #include "main.h"
 /**
 *root - returns the natural square root
