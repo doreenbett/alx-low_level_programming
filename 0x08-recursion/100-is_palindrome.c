@@ -8,8 +8,11 @@
 int is_palindrome(char *s)
 {
 	if (*s == '\0')
+		_putchar('\n');
 		return (1);
 	if (*s != '\0')
-		return (0);
-	return (is_palindrome(s + 1));
+		_putchar(*s);
+		s--;
+		return (1);
+	return (is_palindrome(s - 1));
 }
