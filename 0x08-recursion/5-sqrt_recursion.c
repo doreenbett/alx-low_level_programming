@@ -2,7 +2,7 @@
 
 #include "main.h"
 /**
-*_sqrt_recursion - returns thenatural square root
+*root - returns the natural square root
 *@num: the value to get square root
 *@r: the integer to check and square
 *Return: root of number
@@ -23,7 +23,7 @@ int root(int r, int num)
 */
 int _sqrt_recursion(int n)
 {
-	int r =0;
+	int r = 0;
 
 	if (n < 0)
 		return (-1);
