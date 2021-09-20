@@ -39,5 +39,6 @@ int main(int argc, char **argv)
 		cen--;
 	}
 	printf("%d\n", coin);
+	
 	return (0);
 }
