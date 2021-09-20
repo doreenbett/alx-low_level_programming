@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*main - prints the minimum numer of coins to make change
+*main - prints the minimum number of coins to make change
 *@argc: number of command line arguments
-*@argv: array containing te program command line arguments
-*Return: 1 if if arguments passed is not exactly 1
+*@argv: array containing the program command line arguments
+*Return: 1 if arguments passed is not exactly 1
 *		otherwise 0
 */
 int main(int argc, char **argv)
@@ -26,6 +26,11 @@ int main(int argc, char **argv)
 			cen -= 25;
 			continue;
 		}
+		if ((cen - 10) >= 0)
+		{
+			cen -= 10;
+			continue;
+		}
 		if ((cen - 5) >= 0)
 		{
 			cen -= 5;
@@ -39,6 +44,6 @@ int main(int argc, char **argv)
 		cen--;
 	}
 	printf("%d\n", coin);
-	
+
 	return (0);
 }
