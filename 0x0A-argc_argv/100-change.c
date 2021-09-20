@@ -4,7 +4,7 @@
 *@argc: number of command line arguments
 *@argv: array containing te program command line arguments
 *Return: 1 if if arguments passed is not exactly 1
-*		0 otherwise
+*		otherwise 0
 */
 int main(int argc, char **argv)
 {
