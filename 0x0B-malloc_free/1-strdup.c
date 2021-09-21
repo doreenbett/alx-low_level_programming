@@ -24,8 +24,8 @@ char *_strdup(char *str)
 		return (NULL);
 	for (i = 0; str[i]; i++)
 		dpc[i] = str[i];
-	
+
 	dpc[l] = '\0';
-	
+
 	return (dpc);
 }
