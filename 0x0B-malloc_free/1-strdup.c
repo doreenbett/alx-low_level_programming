@@ -18,7 +18,6 @@ char *_strdup(char *str)
 	{
 		_putchar(str[i]);
 	}
-	str++;
 	free(str);
 	return (str);
 }
