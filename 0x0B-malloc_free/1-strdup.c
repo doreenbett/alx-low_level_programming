@@ -8,16 +8,24 @@
 char *_strdup(char *str)
 {
 	int i;
-	int n = 0;
+	int l = 0;
+	char *dpc;
 
 	if (str == NULL)
 		return (NULL);
-	str = malloc(sizeof(char) * n);
 
-	for (i = 0; i < n; i++)
+	for (i = 0; str[i]; i++)
 	{
-		_putchar(str[i]);
+		l++;
 	}
-	free(str);
-	return (str);
+	dpc = malloc(sizeof(char) * (l + 1));
+
+	if (dpc == NULL)
+		return (NULL);
+	for (i = 0; str[i]; i++)
+		dpc[i] = str[i];
+	
+	dpc[l] = '\0';
+	
+	return (dpc);
 }
