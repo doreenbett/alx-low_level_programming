@@ -15,8 +15,10 @@ char *_strdup(char *str)
 	str = malloc(sizeof(char) * n);
 
 	for (i = 0; i < n; i++)
+	{
 		_putchar(str[i]);
-		str++;
+	}
+	str++;
 	free(str);
 	return (str);
 }
