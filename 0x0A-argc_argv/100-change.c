@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 			cen -= 5;
 			continue;
 		}
-		if ((cen - 2) >= 2)
+		if ((cen - 2) >= 0)
 		{
 			cen -= 2;
 			continue;
