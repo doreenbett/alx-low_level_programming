@@ -1,13 +1,13 @@
 #include "main.h"
 /**
-*strin_nconcat - the function that concatenates two strings
+*string_nconcat - the function that concatenates two strings
 *@s1: a pointer
 *@s2: a second pointer
 *@n: number of bytes
 *
 *Return:  pointer to newly allocated space
 */
-char *string_nconcat(char *s1, char s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i = 0, j = 0, k = 0, l = 0;
 	char *str;
@@ -25,7 +25,7 @@ char *string_nconcat(char *s1, char s2, unsigned int n);
 	else
 		l = i + k;
 	str = malloc(sizeof(char) * l + 1);
-	if (str == Null)
+	if (str == NULL)
 		return (NULL);
 	k = 0;
 	while (j < l)
