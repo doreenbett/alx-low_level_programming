@@ -5,14 +5,9 @@
 *@argv: size of argc
 *Return: 0
 */
-int main(int argc, char **argv)
+int main(void)
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%s\n", argv[0]);
-	}
+	printf("%s\n", __FILE__);
 
 	return (0);
 }
