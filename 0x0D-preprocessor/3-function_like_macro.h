@@ -1,14 +1,6 @@
-#ifndef ABS
-#define ABS
+#ifndef _HEADER_
+#define _HEADER_
+#define ABS(x) ((x) < 0 ? ((x) * -1) : (x))
 #include <stdio.h>
-/**
-*ABS - function
-*@x: value
-*Return: 0
-*/
-int ABS(void)
-{
-ABS() (x * x);
-return (0);
-}
+
 #endif
