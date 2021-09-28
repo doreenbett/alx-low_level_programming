@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 int _strlen(char *s);
-char *_strncpy(char *dest, char *src, int n);
+char *_strcpy(char *dest, char *src);
+dog_t *new_dog(char *name, float age, char *owner);
 /**
 *new_dog - creates a new
 *@name: character pointer
@@ -10,7 +11,7 @@ char *_strncpy(char *dest, char *src, int n);
 *@age: float
 *Return: 0
 */
-dog_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *lovely_dog;
 	int name_len = 0, owner_len = 0;
@@ -42,7 +43,7 @@ dog_t *new_dog(char *name, float age, char *owner);
 		}
 
 		lovely_dog->name = _strcpy(lovely_dog->name, name);
-		lovely_dog->owner = _strcpy(lovely_dog->, owner);
+		lovely_dog->owner = _strcpy(lovely_dog->owner, owner);
 		lovely_dog->age;
 	}
 	return (lovely_dog);
@@ -64,32 +65,21 @@ int _strlen(char *s)
 	return (length);
 }
 /**
-* *_strncpy - copies a string
-* @src: te source value
-* @dest: destination value
-* @n: the limit for the copy
-*
-* Return: a pointer dest
+* char *_strcpy - copies the string
+* @src: source
+* @dest: destiny
+* Return: dest
 */
-char *_strncpy(char *dest, char *src, int n)
+char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
-	int j = 0;
 
-
-	while (src[j])
-	{
-		j++;
-	}
-	while (i < n && src[i])
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
+	dest[i] = src[i];
+
 	return (dest);
 }
