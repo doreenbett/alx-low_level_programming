@@ -9,7 +9,7 @@ dog_t *new_dog(char *name, float age, char *owner);
 *@name: character pointer
 *@owner: character pointer
 *@age: float
-*Return: 0
+*Return: pointer
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
