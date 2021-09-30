@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
-*print_numbers - prints numbers folowed by new line
+*print_numbers - prints numbers followed by new line
 *@separator: is the string to be printed
 *@n: number of integers passed to the function
 *
