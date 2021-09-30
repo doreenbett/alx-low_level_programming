@@ -19,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		return;
 	for (i = 0; i < n; i++)
 	{
-		va_arg(ap, void);
+		va_arg(ap, int);
 	}
 	va_end(ap);
 }
