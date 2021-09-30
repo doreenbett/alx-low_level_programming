@@ -9,21 +9,24 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
+	char *str;
+	va_list strings;
 
-	va_list ap;
+	va_start(strings, n);
 
-	va_start(ap, n);
-
-	if (n == '\0')
-		printf("nil");
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(ap, int));
-		if (separator != NULL)
-		{
+		str = va_arg(strings, char *);
+
+		if (str == NULL)
+			printf("(nil)");
+		else
+			printf("%s", str);
+
+		if (separator != NULL && i != (n - 1))
+
 			printf("%s", separator);
-		}
 	}
 	printf("\n");
 }
