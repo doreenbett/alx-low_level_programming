@@ -5,6 +5,41 @@ int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
 /**
+*_strlen - returns the length of a string
+*@s: is the pointer to the length of string
+*Return: length of @s
+*/
+int _strlen(char *s)
+{
+	int length = 0;
+
+	while
+	(*s++)
+
+	length++;
+
+	return (length);
+}
+/**
+* char *_strcpy - copies the string
+* @src: source
+* @dest: destiny
+* Return: dest
+*/
+char *_strcpy(char *dest, char *src)
+{
+	int i = 0;
+
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = src[i];
+
+	return (dest);
+}
+/**
 *new_dog - creates a new
 *@name: character pointer
 *@owner: character pointer
@@ -47,39 +82,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 		lovely_dog->age;
 	}
 	return (lovely_dog);
-}
-/**
-* _strlen - returns the length of a string
-* @s: is the pointer to the length of string
-* Return: length of @s
-*/
-int _strlen(char *s)
-{
-	int length = 0;
-
-	while
-	(*s++)
-
-	length++;
-
-	return (length);
-}
-/**
-* char *_strcpy - copies the string
-* @src: source
-* @dest: destiny
-* Return: dest
-*/
-char *_strcpy(char *dest, char *src)
-{
-	int i = 0;
-
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = src[i];
-
-	return (dest);
 }
