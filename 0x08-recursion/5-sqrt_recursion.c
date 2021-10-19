@@ -5,7 +5,7 @@
 *@root: the integer to check and square
 *Return: root of number
 */
-int check_root(int root, int num)
+int check_sqrt(int root, int num)
 {
 
 	if ((root * root) == num)
@@ -13,7 +13,7 @@ int check_root(int root, int num)
 	if (root == num / 2)
 		return (-1);
 
-	return (check_root(num, root + 1));
+	return (check_sqrt(num, root + 1));
 }
 /**
 *_sqrt_recursion - returns natural square root of a number
@@ -29,6 +29,6 @@ int _sqrt_recursion(int n)
 	if (n == 1)
 		return (1);
 
-	return (check_root(n, root));
+	return (check_sqrt(n, root));
 }
 
