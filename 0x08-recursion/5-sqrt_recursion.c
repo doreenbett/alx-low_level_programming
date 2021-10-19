@@ -2,18 +2,18 @@
 /**
 *check_root - returns the natural square root
 *@num: the value to get square root
-*@r: the integer to check and square
+*@root: the integer to check and square
 *Return: root of number
 */
-int check_root(int r, int num)
+int check_root(int root, int num)
 {
 
-	if ((r * r) == num)
+	if ((root * root) == num)
 		return (r);
-	if (r == num / 2)
+	if (root == num / 2)
 		return (-1);
 
-	return (check_root(num, r + 1));
+	return (check_root(num, root + 1));
 }
 /**
 *_sqrt_recursion - returns natural square root of a number
@@ -22,13 +22,13 @@ int check_root(int r, int num)
 */
 int _sqrt_recursion(int n)
 {
-	int r = 0;
+	int root = 0;
 
 	if (n < 0)
 		return (-1);
 	if (n == 1)
 		return (1);
 
-	return (check_root(n, r));
+	return (check_root(n, root));
 }
 
