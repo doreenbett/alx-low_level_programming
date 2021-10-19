@@ -9,7 +9,7 @@ int check_root(int root, int num)
 {
 
 	if ((root * root) == num)
-		return (r);
+		return (root);
 	if (root == num / 2)
 		return (-1);
 
