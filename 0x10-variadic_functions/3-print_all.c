@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <string.h>
 #include <stdarg.h>
+#include <stdio.h>
 
 void print_char(va_list arg);
 void print_int(va_list arg);
@@ -99,4 +100,3 @@ void print_all(const char * const format, ...)
 	printf("\n");
 	va_end(args);
 }
-
